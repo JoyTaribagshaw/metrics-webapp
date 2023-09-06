@@ -1,5 +1,5 @@
 const Navbar = () => {
-  const date = new Date()
+  const date = new Date();
   return (
     <nav>
       <h2>
@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* <img></img> */}
       </div>
     </nav>
-  )
+  );
 };
 
 export default Navbar;
