@@ -1,39 +1,123 @@
-.App {
-  text-align: center;
+*,
+*::before,
+a::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 1.2rem;
+  margin-left: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.home-div {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    background-color: deeppink;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.div-container {
+  background-image: url('./assets/finance_chart.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.arrow-div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.arrow-icon {
+  color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    border-radius: 100%;
+    font-size: 30px;
+}
+
+.company-name {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
-  to {
-    transform: rotate(360deg);
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .year {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    padding: 10px 60px 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .year {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 }
