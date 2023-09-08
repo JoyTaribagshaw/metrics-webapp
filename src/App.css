@@ -18,7 +18,7 @@ a::after {
 @media only screen and (min-width: 992px) {
   .title {
     font-size: 3rem;
-}
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -37,12 +37,12 @@ a::after {
 
 .header {
   font-size: 3rem;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    padding: 10px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  padding: 10px;
 }
 
 .countriesContainer {
