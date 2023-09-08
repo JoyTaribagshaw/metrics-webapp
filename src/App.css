@@ -6,86 +6,11 @@ a::after {
   box-sizing: border-box;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.title {
-  font-size: 1.2rem;
-  margin-left: 40px;
-}
-
-.search-box {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.home-div {
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5px;
-    background-color: deeppink;
-}
-
-.home-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.div-container {
-  background-image: url('./assets/finance_chart.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.company-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: #fff;
-    padding: 15px;
-}
-
-.arrow-div {
-  display: flex;
-  justify-content: flex-end;
-  padding: 15px;
-}
-
-.arrow-icon {
-  color: #fff;
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    border-radius: 100%;
-    font-size: 30px;
-}
-
-.company-name {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .home-container {
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-
-  .year {
-    font-size: 1.5rem;
-  }
-
-  .title {
-    font-size: 2rem;
   }
 }
 
@@ -93,16 +18,6 @@ a::after {
 @media only screen and (min-width: 992px) {
   .title {
     font-size: 3rem;
-  }
-
-  .year {
-    font-size: 2rem;
-  }
-
-  .search-box {
-    padding: 10px 60px 10px 10px;
-    border-radius: 10px;
-    font-size: 20px;
 }
 }
 
@@ -112,12 +27,149 @@ a::after {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+}
 
-  .year {
-    font-size: 2.5rem;
-  }
 
-  .title {
-    font-size: 4rem;
-  }
+/* COUNTRIES */
+.container {
+  background-color: rgb(244, 9, 213);
+}
+
+.header {
+  font-size: 3rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.countriesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.countryContainer {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #fff;
+}
+
+.flag {
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.commonName,
+.capitalName,
+.population,
+.link {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+
+/* DETAILS */
+.countryDetailsContainer {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.flag {
+  width: 100%;
+  margin: 0;
+}
+
+.tableHead {
+  font-size: 2rem;
+}
+
+.countryDetailsTable {
+  width: 100%;
+}
+
+.label {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.value {
+  border: 1px solid rgb(187, 149, 157);
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.tableBody tr:nth-child(odd) {
+  background-color: rgb(240, 142, 227);
+}
+
+.tableBody tr:nth-child(even) {
+  background-color: rgb(244, 9, 213);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: cyan;
+  color: #000;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+img {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+/* SEARCH */
+.searchBoxContainer {
+  height: 70vh;
+  background-image: url(https://plus.unsplash.com/premium_photo-1663088923485-58685ba14d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox {
+  border-radius: 10px;
+  padding: 1rem;
+  outline: none;
+  width: 50%;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
