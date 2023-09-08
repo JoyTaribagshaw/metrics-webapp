@@ -1,11 +1,25 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Homepage from './pages/Home';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import Home from './pages/Home';
+import { getCompanies } from './redux/Companies/companiesSlice';
+import MetricsPage from './pages/metrics';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCompanies());
+  }, [dispatch]);
   return (
-    <div>
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Define a route for the details page */}
+        <Route path="/metrics/:symbol" element={<MetricsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
