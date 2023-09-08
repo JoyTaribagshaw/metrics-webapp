@@ -1,23 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import Home from './pages/Home';
-import { getCompanies } from './redux/Companies/companiesSlice';
-import MetricsPage from './pages/metrics';
+import Country from './pages/Countries';
+import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getCompanies());
-  }, [dispatch]);
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Define a route for the details page */}
-        <Route path="/metrics/:symbol" element={<MetricsPage />} />
+        <Route path="/country/:id" element={<Country />} />
       </Routes>
     </BrowserRouter>
   );
