@@ -13,7 +13,7 @@ function Searchbox() {
     <section className="searchBoxContainer">
       <input
         type="text"
-        className="search-box"
+        className="searchbox"
         placeholder="search by company name..."
         onChange={(e) => handleChange(e)}
       />
