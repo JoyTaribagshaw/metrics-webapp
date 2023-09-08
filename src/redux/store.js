@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import companyReducer from './Companies/companiesSlice';
+import countriesReducer from './country/countrySlice';
+import filtersReducer from './Searchbox/searchboxSlice';
 
 const store = configureStore({
   reducer: {
-    company: companyReducer,
+    countries: countriesReducer,
+    filters: filtersReducer,
   },
 });
 
