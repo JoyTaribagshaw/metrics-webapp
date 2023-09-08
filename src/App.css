@@ -95,11 +95,6 @@ a::after {
   margin: 1rem auto;
 }
 
-.flag {
-  width: 100%;
-  margin: 0;
-}
-
 .tableHead {
   font-size: 2rem;
 }
