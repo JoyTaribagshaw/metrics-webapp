@@ -1,15 +1,11 @@
 const Navbar = () => {
   const date = new Date();
   return (
-    <nav>
-      <h2>
+    <nav className="navbar">
+      <h2 className="year">
         { date.getFullYear() }
       </h2>
-      <h1>Most Active</h1>
-      <div>
-        {/* <img></img> */}
-        {/* <img></img> */}
-      </div>
+      <h1 className="title">Most Active</h1>
     </nav>
   );
 };
