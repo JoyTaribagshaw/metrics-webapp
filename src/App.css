@@ -29,7 +29,6 @@ a::after {
   }
 }
 
-
 /* COUNTRIES */
 .container {
   background-color: rgb(244, 9, 213);
@@ -87,7 +86,6 @@ a::after {
   text-decoration: underline;
   color: red;
 }
-
 
 /* DETAILS */
 .countryDetailsContainer {
