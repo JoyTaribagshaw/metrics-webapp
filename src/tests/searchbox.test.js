@@ -13,7 +13,7 @@ test('it should dispatch setSearchTerm when input changes', () => {
   const { getByPlaceholderText } = render(
     <Provider store={store}>
       <Searchbox />
-    </Provider>
+    </Provider>,
   );
 
   const input = getByPlaceholderText('search by company name...');
