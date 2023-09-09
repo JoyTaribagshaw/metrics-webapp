@@ -31,10 +31,12 @@ a::after {
 
 .countriesContainer {
   display: grid;
+
   /* grid-template-columns: repeat(2,1fr); */
   margin: 2rem 1rem;
-    /* width: 90%; */
-    gap: 1.5rem;
+
+  /* width: 90%; */
+  gap: 1.5rem;
 }
 
 .flag {
@@ -67,15 +69,10 @@ a::after {
 /* DETAILS */
 .countryDetailsContainer {
   margin: 1rem auto;
-    background-color: deeppink;
-    width: 100%;
-    overflow-x: auto;
-    padding: 0 10px;
-}
-
-.flag {
+  background-color: deeppink;
   width: 100%;
-  margin: 0;
+  overflow-x: auto;
+  padding: 0 10px;
 }
 
 .tableHead {
@@ -162,42 +159,48 @@ img {
     grid-gap: 1.5rem;
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 2rem auto;
     width: 90%;
-}
-h3 {
-  font-size: 1.5rem;
-}
+  }
 
-h1 {
-  font-size: 2rem;
-}
-.header {
-  font-size: 3rem;
-}
-.label {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 25px 5px;
-}
-.countryDetailsContainer {
-  margin: 1rem auto;
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .label {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 25px 5px;
+  }
+
+  .countryDetailsContainer {
+    margin: 1rem auto;
     background-color: deeppink;
     width: 100%;
     padding: 5px 90px;
-}
-.tableHead {
-  font-size: 2rem;
-}
+  }
+
+  .tableHead {
+    font-size: 2rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .countriesContainer {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+
   .label {
     text-align: center;
     font-size: 1.5rem;
@@ -209,6 +212,6 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .countriesContainer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
