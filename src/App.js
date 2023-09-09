@@ -1,11 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Country from './pages/Countries';
 import './App.css';
-import Homepage from './pages/Home';
 
 function App() {
   return (
-    <div>
-      <Homepage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/country/:id" element={<Country />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
