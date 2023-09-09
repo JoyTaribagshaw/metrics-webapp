@@ -77,7 +77,7 @@ see more details about that country
 
 To get a local copy up and running, follow these steps.
 
-Please first check this video most of your questions answeres are here :[Video link](https://www.loom.com/share/ec1e4db9ee2847f38fbfaa065fd666ba?sid=1949165c-e223-495b-8173-ad7cfac1e28d)
+Please first check this video most of your questions answeres are here :[Video link](https://www.loom.com/share/1194b44941fa4cd68830a00f8f86306a)
 
 ### Prerequisites
 
@@ -189,7 +189,8 @@ If you like this project give a star to it
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank the Microverse to let me write this
+- I would like to thank the Microverse to let me write this.
+- I would like to ackowledge Nelson Sakwa the author of the original design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
