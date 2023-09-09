@@ -6,36 +6,12 @@ a::after {
   box-sizing: border-box;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .home-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .title {
-    font-size: 3rem;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .home-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
-}
-
 /* COUNTRIES */
 .container {
   background-color: rgb(244, 9, 213);
 }
 
 .header {
-  font-size: 3rem;
   width: 90%;
   margin: auto;
   display: flex;
@@ -44,20 +20,21 @@ a::after {
   padding: 10px;
 }
 
-.countriesContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  width: 90%;
-  margin: 2rem auto;
-}
-
 .countryContainer {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   background-color: #fff;
+  width: 100%;
+}
+
+.countriesContainer {
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  margin: 2rem 1rem;
+    /* width: 90%; */
+    gap: 1.5rem;
 }
 
 .flag {
@@ -89,12 +66,20 @@ a::after {
 
 /* DETAILS */
 .countryDetailsContainer {
-  width: 80%;
   margin: 1rem auto;
+    background-color: deeppink;
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 10px;
+}
+
+.flag {
+  width: 100%;
+  margin: 0;
 }
 
 .tableHead {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .countryDetailsTable {
@@ -103,15 +88,15 @@ a::after {
 
 .label {
   text-align: center;
-  font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 .value {
   border: 1px solid rgb(187, 149, 157);
   text-align: center;
-  font-size: 1.5rem;
   color: var(--secondary-color);
   text-transform: capitalize;
+  padding: 20px 0;
 }
 
 .tableBody tr:nth-child(odd) {
@@ -132,12 +117,16 @@ nav {
   color: #000;
 }
 
+th {
+  white-space: nowrap;
+}
+
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 img {
@@ -165,4 +154,61 @@ img {
   border: none;
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .countriesContainer {
+    grid-gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2,1fr);
+    margin: 2rem auto;
+    width: 90%;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+.header {
+  font-size: 3rem;
+}
+.label {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 25px 5px;
+}
+.countryDetailsContainer {
+  margin: 1rem auto;
+    background-color: deeppink;
+    width: 100%;
+    padding: 5px 90px;
+}
+.tableHead {
+  font-size: 2rem;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .countriesContainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .label {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 40px 5px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .countriesContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
 }
